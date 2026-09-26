@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Stickman Runner Game 3D</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="start-screen" class="overlay visible">
+        <div class="panel">
+            <h1 id="start-title">Stickman Runner Game 3D</h1>
+            <p id="start-tagline">The Best Simple 3D Runner Game!</p>
+            <div class="button-stack">
+                <button id="play-button">Play</button>
+                <div class="settings-wrap">
+                    <button id="settings-button" type="button" aria-label="Settings">
+                        <span class="gear-icon">⚙</span>
+                    </button>
+                    <span class="settings-text">Coming Soon</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="credit-text">Created: 2023. Published: 2026.</div>
+    <div id="version-text">Version: 1.0</div>
+
+    <div id="controls" class="controls">
+        <span>Left = Left Arrow.</span>
+        <span>Right = Right Arrow.</span>
+        <span>Jump = Up Arrow.</span>
+        <span>Pause/Resume = Shift.</span>
+    </div>
+    <div id="ui"></div>
+    <button id="pause-button" class="hidden" type="button">Pause (Shift)</button>
+    <div id="hud">
+        <div id="score">Score: 0 m</div>
+        <div id="best-score">Best: 0 m</div>
+    </div>
+
+    <!-- Load Three.js library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
